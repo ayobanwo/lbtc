@@ -1,0 +1,97 @@
+.navhead {
+    background: linear-gradient(83.99deg, rgba(7, 47, 1, 0.82) -2.75%, rgba(70, 255, 43, 0.82) 109.25%),
+        url(../images/regpage-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar {
+    padding: 20px 9%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.ul-nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.header-nav-link {
+    color: #fff !important;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+#nav-logo {
+    width: 50px;
+    height: 50px;
+    background: white;
+}
+
+nav li {
+    display: inline;
+}
+
+.link-hover-effect-1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+.link-hover-effect-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.link-hover-effect-1:hover::before {
+    transform: translateX(0);
+}
+
+.dropdown-menu.show {
+    padding-left: 10px;
+    background: #381238;
+    width: 200px;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+header {
+    padding: 70px 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    background: white;
+    padding: 50px;
+    color: black; 
+}
+input{
+    margin-bottom: 10px ;
+}

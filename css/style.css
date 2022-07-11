@@ -1,0 +1,90 @@
+.navbar {
+    padding: 20px 9%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.ul-nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+.header-nav-link {
+    color: #000 !important;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+#nav-logo {
+    width: 50px;
+    height: 50px;
+    /* margin-right: 25rem; */
+}
+
+nav li {
+    display: inline;
+}
+
+.link-hover-effect-1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+.link-hover-effect-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transform: translateX(-105%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.link-hover-effect-1:hover::before {
+    transform: translateX(0);
+}
+
+.dropdown-menu.show {
+    padding-left: 10px;
+    background: #381238;
+    width: 200px;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+header{
+    padding: 70px 10%;
+    background: rgb(7 47 1);
+    color: white;
+}
+.lbtc-text{
+    font-size: 70px;
+    font-family: candara;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.header-text p{
+    width: 55%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.headerbtn{
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
