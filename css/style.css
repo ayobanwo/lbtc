@@ -1,5 +1,10 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .navbar {
     padding: 20px 9%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 a:hover {
@@ -28,7 +33,6 @@ a:hover {
 #nav-logo {
     width: 50px;
     height: 50px;
-    /* margin-right: 25rem; */
 }
 
 nav li {
@@ -87,4 +91,60 @@ header{
     border-radius: 20px;
     font-weight: bold;
     padding: 10px 20px;
+}
+
+.learn, .obj{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 10%;
+    text-align: center;
+}
+.learn h1, .obj h1{
+    font-size: 40px;
+}
+.learn p, .obj p{
+    width: 80%;
+}
+.heading-hr{
+    width: 15%;
+    border-top: 2px solid black;
+    margin-bottom: 30px;
+}
+.obj{
+    background: #F5F5F5;
+}
+.objcard-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.objcard{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 280px;
+    margin: 30px 10px;
+    height: 420px;
+    border-radius: 15px;
+}
+.card-img{
+    height: 200px;
+    width: 280px;
+    border-radius: 15px 15px 0 0;
+}
+.cardtext{
+padding: 25px;
+}
+.ordp{
+    padding: 70px 9%;
+}
+.ordp-img{
+    height: 400px;
+    width: 520px;
+}
+.ordp-hr {
+    width: 35%;
+    border-top: 2px solid black;
+    margin-bottom: 30px;
+    margin-left: 0;
 }
