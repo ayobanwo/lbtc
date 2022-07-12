@@ -88,9 +88,11 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .headerbtn{
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: bold;
     padding: 10px 20px;
+    background: #A8FF9B;
+        box-shadow: 0px 4px 4px rgba(7, 47, 1, 0.26);
 }
 
 .learn, .obj{
@@ -101,8 +103,9 @@ header{
     padding: 90px 10%;
     text-align: center;
 }
-.learn h1, .obj h1{
+h1{
     font-size: 40px;
+    font-weight: bold;
 }
 .learn p, .obj p{
     width: 80%;
@@ -127,24 +130,55 @@ header{
     height: 420px;
     border-radius: 15px;
 }
-.card-img{
+.card-img-div1{
+    background: linear-gradient(rgba(7, 47, 1, 0.7), rgba(7, 47, 1, 0.7)),
+            url(../images/cardp2.jpg);
+}
+.card-img-div2{
+    background: linear-gradient(rgba(7, 47, 1, 0.7), rgba(7, 47, 1, 0.7)),
+            url(../images/cardp1.jpg);
+}
+.card-img-div3{
+    background: linear-gradient(rgba(7, 47, 1, 0.7), rgba(7, 47, 1, 0.7)),
+            url(../images/cardp3.jpg);
+}
+.card-img-div4{
+    background: linear-gradient(rgba(7, 47, 1, 0.7), rgba(7, 47, 1, 0.7)),
+            url(../images/cardp4.jpg);
+}
+.card-img-div{
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 200px;
     width: 280px;
-    border-radius: 15px 15px 0 0;
 }
 .cardtext{
-padding: 25px;
+    padding: 25px;
 }
-.ordp{
+.ordp, .comm-div{
     padding: 70px 9%;
 }
-.ordp-img{
-    height: 400px;
-    width: 520px;
+.ordp-img, .sprt-img{
+    height: 330px;
+    width: 600px;
 }
 .ordp-hr {
-    width: 35%;
+    width: 25%;
     border-top: 2px solid black;
     margin-bottom: 30px;
-    margin-left: 0;
+    margin-left: 180px;
+}
+.comm-div hr{
+    width: 25%;
+    border-top: 2px solid black;
+    margin-bottom: 30px;
+}
+.comm-div p{
+    text-align: right;
+    line-height: 30px;
+}
+.comm-div .img-div{
+    display: flex;
 }
