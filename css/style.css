@@ -75,12 +75,13 @@ nav li {
 
 header{
     padding: 100px 10%;
-    background: linear-gradient(rgba(7, 47, 1, 0.97), rgba(7, 47, 1, 0.1)),
-            url(../images/header-bg.jpg);
+    /* background: linear-gradient(rgba(7, 47, 1, 0.97), rgba(7, 47, 1, 0.1)),
+            url(../images/header-bg.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    background: #072F01;
 }
 .lbtc-text{
     font-size: 70px;
