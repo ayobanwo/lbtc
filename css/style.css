@@ -74,7 +74,7 @@ nav li {
 
 header{
     padding: 70px 10%;
-    background: rgb(7 47 1);
+    background: #072f01;
     color: white;
 }
 .lbtc-text{
@@ -87,12 +87,54 @@ header{
     width: 55%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.headerbtn{
+
+.headerbtn {
+    display: inline-block;
+    padding: 10px 40px;
+    color: #072F01 !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
     border-radius: 25px;
-    font-weight: bold;
-    padding: 10px 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.headerbtn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: #A8FF9B;
-        box-shadow: 0px 4px 4px rgba(7, 47, 1, 0.26);
+    z-index: -2;
+}
+
+.headerbtn:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #807942;
+    transition: all 0.3s;
+    z-index: -1;
+    color: white;
+}
+
+.headerbtn:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.headerbtn:hover:before {
+    width: 100%;
 }
 
 .learn, .obj{
@@ -161,7 +203,7 @@ h1{
     padding: 70px 9%;
 }
 .ordp-img, .sprt-img{
-    height: 330px;
+    height: 400px;
     width: 600px;
 }
 .ordp-hr {
@@ -181,4 +223,54 @@ h1{
 }
 .comm-div .img-div{
     display: flex;
+}
+.comm-text-div{
+    text-align: center;
+}
+.speak-btn {
+    display: inline-block;
+    padding: 10px 40px;
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.speak-btn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #072F01;
+    z-index: -2;
+}
+
+.speak-btn:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.speak-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.speak-btn:hover:before {
+    width: 100%;
 }
