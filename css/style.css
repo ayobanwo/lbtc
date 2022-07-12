@@ -178,6 +178,10 @@ h1{
     height: 420px;
     border-radius: 15px;
 }
+.obj-img{
+    height: 50px;
+    width: 50px;
+}
 .card-img-div1{
     background: linear-gradient(rgba(7, 47, 1, 0.7), rgba(7, 47, 1, 0.7)),
             url(../images/cardp2.jpg);
@@ -201,6 +205,9 @@ h1{
     background-repeat: no-repeat;
     height: 200px;
     width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cardtext{
     padding: 25px;
