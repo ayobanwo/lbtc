@@ -73,8 +73,12 @@ nav li {
 }
 
 header{
-    padding: 70px 10%;
-    background: #072f01;
+    padding: 100px 10%;
+    background: linear-gradient(rgba(7, 47, 1, 0.97), rgba(7, 47, 1, 0.1)),
+            url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 .lbtc-text{
@@ -212,6 +216,36 @@ h1{
     margin-bottom: 30px;
     margin-left: 180px;
 }
+.courses{
+    padding: 100px 9%;
+    text-align: center;
+    background: linear-gradient(rgba(7, 47, 1, 0.97), rgba(7, 47, 1, 0.97)),
+            url(../images/course-bg.svg);
+    color: white;
+}
+.course-card-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.course-card{
+    display: flex;
+    flex-direction: column;width: 300px;
+    margin-right: 40px;
+}
+.courses-num{
+    font-size: 60px;
+    font-weight: bold;
+}
+.course-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.courses hr{
+    border-top: 2px solid #BB563C;
+}
 .comm-div hr{
     width: 25%;
     border-top: 2px solid black;
@@ -273,4 +307,13 @@ h1{
 
 .speak-btn:hover:before {
     width: 100%;
+}
+
+footer{
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 9%;
+    font-weight: bold;
 }
