@@ -37,6 +37,7 @@ a:hover {
 
 nav li {
     display: inline;
+    margin-left: 30px;
 }
 
 .link-hover-effect-1 {
@@ -158,8 +159,9 @@ h1{
 }
 .heading-hr{
     width: 15%;
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     margin-bottom: 30px;
+    border: 1px solid #BB563C
 }
 .obj{
     background: #F5F5F5;
