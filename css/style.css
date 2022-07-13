@@ -88,6 +88,7 @@ header{
     font-family: candara;
     letter-spacing: 5px;
     margin-bottom: 10px;
+    font-family: 'Shippori Mincho', serif;
 }
 .header-text p{
     width: 55%;
@@ -153,7 +154,7 @@ header{
 }
 h1{
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 500px;
 }
 .learn p, .obj p{
     width: 80%;
@@ -224,7 +225,6 @@ h1{
     width: 25%;
     border-top: 2px solid black;
     margin-bottom: 30px;
-    margin-left: 180px;
 }
 .courses{
     padding: 100px 9%;
@@ -268,6 +268,7 @@ h1{
 }
 .comm-div .img-div{
     display: flex;
+    margin-bottom: 30px;
 }
 .comm-text-div{
     text-align: center;
@@ -327,4 +328,29 @@ footer{
     align-items: center;
     padding: 40px 9%;
     font-weight: bold;
+}
+
+@media (max-width: 1000px){
+    .lbtc-text{
+        font-size: 60px;
+    }
+    .header-text p{
+        width: 70%;
+    }
+}
+@media (max-width: 500px){
+    .lbtc-text {
+            font-size: 35px;
+            font-weight: bold;
+    }
+    .header-text p {
+        width: 90%;
+    }
+    .ordp-img, .sprt-img{
+        height: 250px;
+    }
+    .course-card{
+        width: 100%;
+        margin: 0;
+    }
 }
