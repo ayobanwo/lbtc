@@ -5,6 +5,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.hide-desk{
+    display: none;
+}
 .navbar {
     padding: 20px 9%;
     background: white;
@@ -35,15 +38,17 @@ a:hover {
 }
 
 #nav-logo {
-    width: 50px;
-    height: 50px;
+    width: 180px;
+    height: 70px;
 }
 
 nav li {
     display: inline;
     margin-left: 30px;
 }
-
+.logo-mob{
+    display: none;
+}
 .link-hover-effect-1 {
     position: relative;
     display: inline-block;
@@ -180,7 +185,7 @@ h1{
 }
 .objcard{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    width: 280px;
+    max-width: 280px;
     margin: 30px 10px;
     height: 420px;
     border-radius: 15px;
@@ -189,6 +194,14 @@ h1{
     height: 50px;
     width: 50px;
 }
+.obj-mob{
+    display: none !important;
+}
+
+.obj-mob .objcard{
+    margin: 50px !important;
+}
+
 .card-img-div1{
     background: linear-gradient(rgba(7, 47, 1, 0.7), rgba(7, 47, 1, 0.7)),
             url(../images/cardp2.jpg);
@@ -211,7 +224,6 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     height: 200px;
-    width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,12 +362,250 @@ footer{
     padding: 40px 9%;
     font-weight: bold;
 }
+.pop-up{
+    background-color: white;
+    width: 500px;
+    height: 450px;
+    align-self: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px auto;
+    border-radius: 40px;
+    position: fixed;
+    top: 90px;
+    left: 550px;
+    z-index: 9999;
+    transition: 0.3s;
+    transform: scale(1);
+
+}
+.pop-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.pop-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.pop-register{
+    font-family: 'Fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 17px;
+    text-align: center;
+}
+.pop-year{
+    font-family: 'Bebas Kai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 160px;
+    color: #DDDDDD;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.pop-cbc{
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 59px;
+        letter-spacing: 15px;
+        color: #072F01;
+        margin: 0;
+        position: absolute;
+        top: 210px;
+        left: 200px;
+}
+.yes{
+    font-family: 'Fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #181818;
+    color: white;
+    margin-right: 40px;
+    padding: 12px;
+}
+.yes:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+.no{
+    font-family: 'Fredoka', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ECECEC;
+    color: #1B1B1B;
+    border: 1px solid #1b1b1b;
+    padding: 12px 15px;
+}
+  .hide-popup {
+      transform: scale(0.2);
+      opacity: 0;
+      visibility: hidden;
+  }
+.button{
+}
+
 @media (max-width: 1300px){
     header{
         background: linear-gradient(90deg, #072F01 41.93%, rgba(7, 47, 1, 0) 100%), url(../images/lbtc-header-md-bg.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    .pop-up{
+            top: 90px;
+            left: 450px;
+    }
+}
+@media (max-width:1200px) {
+    .pop-up{
+            top: 90px;
+                left: 350px;
+    }
+}
+/* @media (max-width:900px) {
+    .pop-up {
+        top: 90px;
+        left: 250px;
+    }
+} */
+@media (max-width:920px) {
+    .pop-up {
+        top: 90px;
+        left: 220px;
+        width: 400px;
+    }
+        .pop-register {
+            font-family: 'Fredoka', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 17px;
+            text-align: center;
+        }
+    
+        .pop-year {
+            font-family: 'Bebas Kai';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 140px;
+            color: #DDDDDD;
+            margin: 0;
+        }
+        .pop-cbc {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 59px;
+            letter-spacing: 15px;
+            color: #072F01;
+            margin: 0;
+            position: absolute;
+            top: 180px;
+            left: 160px;
+        }
+}
+@media (max-width: 700px) {
+    .pop-up {
+            top: 90px;
+            left: 100px;
+            width: 400px;
+        }
+}
+@media (max-width: 500px) {
+    .pop-up {
+        top: 90px;
+        left: 20px;
+        width: 400px;
+    }
+}
+@media (max-width:430px) {
+    .pop-up {
+        top: 90px;
+        left: 30px;
+        width: 350px;
+    }
+
+    .pop-register {
+        font-family: 'Fredoka', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .pop-year {
+        font-family: 'Bebas Kai';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 140px;
+        color: #DDDDDD;
+        margin: 0;
+    }
+
+    .pop-cbc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 59px;
+        letter-spacing: 15px;
+        color: #072F01;
+        margin: 0;
+        position: absolute;
+        top: 180px;
+        left: 130px;
+    }
+}
+@media (max-width:400px) {
+        .pop-up {
+                top: 90px;
+                left: 20px;
+                width: 350px;
+            }
+                .pop-cbc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 59px;
+        letter-spacing: 15px;
+        color: #072F01;
+        margin: 0;
+        position: absolute;
+        top: 180px;
+        left: 120px;
+    }
+}
+@media (max-width:370px) {
+    .pop-up {
+        top: 90px;
+        left: 10px;
+        width: 330px;
     }
 }
 @media (max-width: 1000px){
@@ -390,7 +640,7 @@ footer{
         align-items: center;
     }
     .ordp-img, .sprt-img{
-        height: 250px;
+        height: 200px;
         width: 80%;
     }
     .course-card{
@@ -401,3 +651,17 @@ footer{
         font-size: 30px;
     }
 }
+@media(max-width: 500px){
+    .obj-desk,  .logo-desk{
+            display: none !important;
+        }
+    
+    .obj-mob, .logo-mob{
+        display: block !important;
+    }
+    #nav-logo-mob{
+        width: 50px;
+        height: 50px;
+    }
+}
+

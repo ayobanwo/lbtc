@@ -10,6 +10,7 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -21,13 +22,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/lbtc-ico.ico">
     <title>LBTC</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
-        <a href=""><img src="images/lbtc logo.svg" alt="" id="nav-logo"></a>
+        <a href="">
+            <img src="images/lbtc-logo-black.png" alt="" id="nav-logo" class="logo-desk">
+            <img src="images/lbtc logo.svg" alt="" id="nav-logo-mob" class="logo-mob">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
             aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,7 +51,7 @@
                 <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1" target="_blank"
                         href="./crosswalk-churches/"> FAQ</a></li>
                 <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1" href="./underconstruct/">Contact</a></li>
-                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1" href="./underconstruct/">Register</a></li>
+                <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1" href="./cbc/">Register</a></li>
             </ul>
         </div>
     </nav>
@@ -75,7 +85,7 @@
         <p>
             Our Courses are hinged on four main objectives that align with our blanket vision.
         </p>
-        <div class="objcard-div">
+        <div class="objcard-div obj-desk">
             <div class="objcard">
                 <div class="card-img-div1 card-img-div">
                     <img src="images/cross.svg" alt="" class="obj-img">
@@ -121,6 +131,69 @@
                     and enthusiasm.
                 </div>
             </div>
+        </div>
+
+        <div class="obj-mob owl-carousel owl-theme">
+
+            
+                <div class="item">
+                    <div class="objcard">
+                        <div class="card-img-div1 card-img-div">
+                            <img src="images/cross.svg" alt="" class="obj-img">
+                        </div>
+                        <div class="cardtext">
+                            To come to know the Lord
+                            Jesus in a personal yet
+                            communal way.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="objcard">
+                        <div class="card-img-div2 card-img-div">
+                            <img src="images/openbook.svg" alt="" class="obj-img">
+                        </div>
+                        <div class="cardtext">
+                            To develop an interest in
+                            God’s word and to imbibe
+                            the discipline of study,
+                            comprehension and sharing
+                            the scriptures.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="objcard">
+                        <div class="card-img-div3 card-img-div">
+                            <img src="images/heart.svg" alt="" class="obj-img">
+                        </div>
+                        <div class="cardtext">
+                            To discover the possibilities
+                            of the expressions of God’s
+                            Word in everyday life
+                            through precepts and
+                            by examples.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+
+                    <div class="objcard">
+                        <div class="card-img-div4 card-img-div">
+                            <img src="images/UsersFour.svg" alt="" class="obj-img">
+                        </div>
+                        <div class="cardtext">
+                            To become effective
+                            members of local churches
+                            serving her with substance
+                            and enthusiasm.
+                        </div>
+                    </div>
+                </div>
+            
         </div>
     </div>
     <div class="ordp">
@@ -202,17 +275,36 @@
             </div>
         </div>
     </div>
+
+
     <footer>
         &copy 2022, LIGHTSTREAM BIBLE TRAINING COLLEGE
     </footer>
-
+    <section class="pop">
+            <div class="pop-up">
+                <div class="pop-up-content">
+                    <div class="pop-content">
+                        <div class="pop-text">
+                            <p class="pop-register">Would you like to register?</p>
+                            <p class="pop-year">'22</p>
+                            <p class="pop-cbc">cbc</p>
+                        </div>
+                        <div class="button">
+                            <a href="/cbc/" class="yes">YES</a>
+                            <a class="no">NO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script src="js/owl.js" type="text/javascript"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
