@@ -199,7 +199,7 @@ h1{
 }
 
 .obj-mob .objcard{
-    margin: 50px !important;
+    margin: 25px !important;
 }
 
 .card-img-div1{
@@ -666,12 +666,24 @@ footer{
         height: 200px;
         width: 80%;
     }
+    .learn p{
+        text-align: left;
+        width: 100%;
+    }
     .course-card{
         width: 100%;
         margin: 0;
     }
     h1{
         font-size: 30px;
+    }
+    .comm-div p{
+        text-align: left;
+        line-height: 25px;
+    }
+    footer{
+        font-size: 13px;
+        padding: 25px 4%;
     }
 }
 @media(max-width: 500px){
@@ -699,6 +711,18 @@ footer{
     #nav-logo-mob{
         width: 50px;
         height: 50px;
+    }
+    .course-title{
+        margin-bottom: 5px;
+    }
+    .course-card{
+        height: 280px;
+    }
+    .course-title{
+        height: 55px;
+    }
+     .ordp-img, .sprt-img {
+            height: 170px;
     }
 }
 
