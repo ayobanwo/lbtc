@@ -27,14 +27,12 @@
 <body>
     <div class="navhead">
 
-        <nav class="navbar navbar-expand-lg" id="navbar">
-            <a href="../"><img src="../images/lbtc-logo-white.png" alt="" id="nav-logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
-                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse  my-2 my-md-0" id="navbarsExample05">
+        <nav class="navbar" id="navbar">
+            <a href="../">
+                <img src="../images/lbtc-logo-white.png" alt="" id="nav-logo">
+                <img src="../images/lbtc-logo-white-mob.png" alt="" id="nav-logo-mob">
+            </a>
+            <div class="no-collapse" i>
                 <ul class="navbar-nav ul-nav navbar-right">
 
 
@@ -60,63 +58,281 @@
         </header>
 
     </div>
-    <div class="section-a">
+    <div class="section">
         <form action="">
             <div class="form-head">
-                <h3>SECTION A</h3>
-                <p>Student's Bio-data</p>
+                <h3>SECTION B</h3>
+                <p>
+                    Student’s Religious Background
+                </p>
             </div>
             <div class="form-body">
+                <label for="dmntion">
+                    IN WHAT DENOMINATION/RELIGION WERE YOU RAISED?
+                </label> <br>
+                <input type="text" name="dmntion" id="dmntion">
+
+                
+
+                <label for="slvexp">
+                    BRIEFLY DESCRIBE YOUR SALVATION EXPERIENCE
+                </label> <br>
+                <input type="text" name="slvexp" id="slvexp">
+
+                <label for="">
+                    PASTOR/DISCIPLER/SPIRITUAL MENTOR
+                </label> <br>
+
+                <label class="sub-label" for="mentor-name">
+                    Name
+                </label> <br>
+                <input type="text" name="mentor-name" id="mentor-name">
+
+                <label class="sub-label" for="mentor-church">
+                    Church or Denomination
+                </label> <br>
+                <input type="text" name="mentor-church" id="mentor-church">
+
+                <label class="sub-label" for="mentor-town">
+                    Town/City of Residence
+                </label> <br>
+                <input type="text" name="mentor-town" id="mentor-town">
+
+                <label for="local-church">
+                    CURRENT LOCAL CHURCH COMMITMENT
+                </label> <br>
+
+                <label class="sub-label" for="dnmtion-name">
+                    Name of Denomination
+                </label> <br>
+                <input type="text" name="dnmtion-name" id="dnmtion-name">
+                
+                <label class="sub-label" for="p-in-charge">
+                    PASTOR or LEADER in charge
+                </label> <br>
+                <input type="text" name="p-in-charge" id="p-in-charge">
+                
+                <label class="sub-label" for="church-loc">
+                    Location
+                </label> <br>
+                <input type="text" name="church-loc" id="church-loc">
+
+                <label class="sub-label" for="church-loc">
+                    IN WHAT CAPACITY DO YOU SERVE?
+                </label> <br>
+
+                <select name="serve" id="serve">
+                    <option  selected disabled></option>
+                    <option value="member">Member</option>
+                    <option value="worker">Worker</option>
+                    <option value="leader">Leader</option>
+                    <option value="ass-pastor">Associate Pastor</option>
+                    <option value="youth-pastor">Youth Pastor</option>
+                    <option value="asstnt-pastor">Assistant Pastor</option>
+                    <option value="pastor">Pastor</option>
+                </select>
+
+                <label class="sub-label" for="church-loc">
+                    Duration of Attendace/Commitment (Answer in years)
+                </label> <br>
+                <input type="text" name="church-loc" id="church-loc">
+
+                <label class="sub-label" for="church-loc">
+                    WHAT IS YOUR COMMITMENT PLAN?
+                </label> <br>
+
+                <input type="radio" name="commit" id="commit-primary"> 
+                <label class="sub-label" for="">
+                    This is my primary commitment. I have no intention of leaving.
+                </label> <br>
+
+                <input type="radio" name="commit" id="commit-loc"> 
+                <label class="sub-label" for="">
+                    I only attend because of my current location. I plan to return to my original Church
+                    when I leave.
+                </label> <br>
+
+                <input type="radio" name="commit" id="commit-not"> 
+                <label class="sub-label" for="">
+                    I only attend services/meetings. I am not very involved.
+                </label> <br> <br>
+
+                <label for="local-church">
+                    OTHER MINISTRY(IES) YOU ARE AFFILIATED WITH
+                </label> <br>
+                
+                <label class="sub-label" for="group-name">
+                    Name of group or Body
+                </label> <br>
+                <input type="text" name="group-name" id="group-name">
+                
+                <label class="sub-label" for="p-of-group">
+                    PASTOR/LEADER of the group
+                </label> <br>
+                <input type="text" name="p-of-group" id="p-of-group">
+
+                <label class="sub-label" for="church-loc">
+                    PURPOSE
+                </label> <br>
+                
+                <select name="serve" id="serve">
+                    <option selected disabled></option>
+                    <option value="music">Music Ministry</option>
+                    <option value="drama">Drama Ministry</option>
+                    <option value="fellowship">Fellowship</option>
+                    <option value="missions"> Missions and Outreach</option>
+                    <option value="prayer-grp">Prayer Group</option>
+                    <option value="study-grp">Study Group</option>
+                    <option value="rltnshp">Singles, Relationship, and marriage ministry</option>
+                    <option value="samaritan">Samaritan</option>
+                </select>
+                <label class="sub-label" for="">
+                    Other (Please specify)
+                </label>
+                <input type="text">
+
+                <label class="sub-label" for="loc-of-meet">
+                    Location of Meeting
+                </label> <br>
+                <input type="text" name="loc-of-meet" id="loc-of-meet">
+
+                <label class="sub-label" for="commit-lev">
+                    Commitment Level
+                </label> <br>
+                <input type="text" name="commit-lev" id="commit-lev">
+
+                <label class="sub-label" for="church-loc">
+                    COMMITMENT PLAN
+                </label> <br>
+                
+                <input type="radio" name="commit" id="commit-primary">
+                <label class="sub-label" for="">
+                    This is my primary commitment. I have no intention of leaving.
+                </label> <br>
+                
+                <input type="radio" name="commit" id="commit-loc">
+                <label class="sub-label" for="">
+                    I only attend for now because I am in school. I plan to return to my original church when I leave school.
+                </label> <br>
+                
+                <input type="radio" name="commit" id="commit-not">
+                <label class="sub-label" for="">
+                    I intend to combine this with my local church. It’s just a group I’m part of.
+                </label> <br>
+
+                <input type="radio" name="commit" id="commit-not">
+                <label class="sub-label" for="">
+                    I only attend services/meetings. I am not very involved.
+                </label> <br><br>
+
+                <label for="local-church">
+                    OTHER MINISTRY(IES) YOU ARE AFFILIATED WITH
+                </label> <br><br>
+                
+                <label class="sub-label" for="group-name2">
+                    Name of group or Body
+                </label> <br>
+                <input type="text" name="group-name2" id="group-name2">
+                
+                <label class="sub-label" for="p-of-group2">
+                    PASTOR/LEADER of the group
+                </label> <br>
+                <input type="text" name="p-of-group2" id="p-of-group2">
+                
+                <label class="sub-label" for="church-loc2">
+                    PURPOSE
+                </label> <br>
+                
+                <select name="serve" id="serve">
+                    <option selected disabled></option>
+                    <option value="music2">Music Ministry</option>
+                    <option value="drama2">Drama Ministry</option>
+                    <option value="fellowship2">Fellowship</option>
+                    <option value="missions2"> Missions and Outreach</option>
+                    <option value="prayer-grp2">Prayer Group</option>
+                    <option value="study-grp2">Study Group</option>
+                    <option value="rltnshp2">Singles, Relationship, and marriage ministry</option>
+                    <option value="samaritan2">Samaritan</option>
+                </select>
+                <label class="sub-label" for="">
+                    Other (Please specify)
+                </label>
+                <input type="text">
+                
+                <label class="sub-label" for="loc-of-meet2">
+                    Location of Meeting
+                </label> <br>
+                <input type="text" name="loc-of-meet2" id="loc-of-meet2">
+                
+                <label class="sub-label" for="commit-lev2">
+                    Commitment Level
+                </label> <br>
+                <input type="text" name="commit-lev2" id="commit-lev2">
+                
+                <label class="sub-label" for="church-loc2">
+                    COMMITMENT PLAN
+                </label> <br>
+                
+                <input type="radio" name="commit2" id="commit-primary2">
+                <label class="sub-label" for="">
+                    This is my primary commitment. I have no intention of leaving.
+                </label> <br>
+                
+                <input type="radio" name="commit2" id="commit-loc2">
+                <label class="sub-label" for="">
+                    I only attend for now because I am in school. I plan to return to my original church when I leave school.
+                </label> <br>
+                
+                <input type="radio" name="commit2" id="commit-not2">
+                <label class="sub-label" for="">
+                    I intend to combine this with my local church. It’s just a group I’m part of.
+                </label> <br>
+                
+                <input type="radio" name="commit2" id="commit-not2">
+                <label class="sub-label" for="">
+                    I only attend services/meetings. I am not very involved.
+                </label> <br> <br>
+
+                <label for="local-church">
+                    PREVIOUS BIBLE SCHOLARSHIP
+                </label> <br>
+
+                <label class="sub-label" for="mother-org">
+                    Mother Ministry or Organization
+                </label> <br>
+                <input type="text" name="mother-org" id="mother-org">
+
                 <div class="row">
-                    <div class="col-lg-6">
-                        <label for="fname">First Name</label> <br>
-                        <input type="text" name="fname" id="fname">
+                    <div class="col-md-4">
+                        <label for="date" class="sub-label">Date</label><br>
+                        <input type="date" name="date" id="date">
                     </div>
-                    <div class="col-lg-6">
-                        <label for="lname">Last Name</label> <br>
-                        <input type="text" name="lname" id="lname">
+                    <div class="col-md-4">
+                        <label for="duration" class="sub-label">Duration</label><br>
+                        <input type="text" name="date" id="duration">
                     </div>
-                    <div class="col-lg-6">
-                        <label for="gender">Gender</label> <br>
-                        <select name="gender" id="gender">
-                            <option value="" disabled selected>Select</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="dob">Date of Birth</label> <br>
-                        <input type="date" name="dob" id="dob">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="town">Town/City of Residence</label> <br>
-                        <input type="text" name="town" id="town">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="occup">Occupation</label> <br>
-                        <input type="text" name="occup" id="occup">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="edu">Highest Level of Education</label> <br>
-                        <input type="text" name="edu" id="edu">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="marital">Marital Status</label> <br>
-                        <input type="text" name="marital" id="marital">
-                    </div>
-                    <div class="col-lg-12">
-                        <label for="how">How did you get to know about CBC?</label> <br>
-                        <textarea name="" id="textarea"></textarea>
+                    <div class="col-md-4">
+                        <label for="course-spec" class="sub-label">Date</label><br>
+                        <input type="text" name="course-spec" id="course-spec">
                     </div>
                 </div>
 
-                <a href="" class="next-btn">NEXT</a>
-            </div>
-        </form>
-    </div>
-    <section>
+                <label class="sub-label" for="mother-org">
+                    Certification
+                </label> <br>
+                <input type="text" name="mother-org" id="mother-org"> <br> <br>
 
-    </section>
+                <label for="know-about">
+                    HOW DID YOU GET TO KNOW ABOUT THIS BIBLE TRAINING COURSE?
+                </label>
+
+                <input type="text" name="know-about" id="know-about">
+
+                <a href="../cbcc/" class="next-btn">NEXT</a>
+            </div>
+            <section>
+
+            </section>
 </body>
 
 </html>
