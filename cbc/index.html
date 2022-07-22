@@ -37,7 +37,7 @@
     
                     
                     <li class="nav-link"><a class="header-nav-link nav-link link-hover-effect-1"
-                            href="./underconstruct/">Contact</a></li>
+                            href="">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -68,15 +68,15 @@
                 <div class="row">
                     <div class="col-md-6">
                         <label for="fname">First Name</label> <br>
-                        <input type="text" name="fname" id="fname">
+                        <input type="text" name="fname" id="fname" required>
                     </div>
                     <div class="col-md-6">
                         <label for="lname">Last Name</label> <br>
-                        <input type="text" name="lname" id="lname">
+                        <input type="text" name="lname" id="lname" required>
                     </div>
                     <div class="col-md-6">
                         <label for="gender">Gender</label> <br>
-                        <select name="gender" id="gender">
+                        <select name="gender" id="gender" required>
                             <option value="" disabled selected>Select</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -84,31 +84,58 @@
                     </div>
                     <div class="col-md-6">
                         <label for="dob">Date of Birth</label> <br>
-                        <input type="date" name="dob" id="dob">
+                        <input type="date" name="dob" id="dob" required>
                     </div>
                     <div class="col-md-6">
                         <label for="town">Town/City of Residence</label> <br>
-                        <input type="text" name="town" id="town">
+                        <input type="text" name="town" id="town" required>
                     </div>
                     <div class="col-md-6">
                         <label for="occup">Occupation</label> <br>
-                        <input type="text" name="occup" id="occup">
+                        <input type="text" name="occup" id="occup" required>
                     </div>
                     <div class="col-md-6">
                         <label for="edu">Highest Level of Education</label> <br>
-                        <input type="text" name="edu" id="edu">
+                        <select name="edu" id="edu" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="sch-cert">Secondary School Certificate or Equivalent </option>
+                            <option value="tech-cert">Technical or Occupational Cerificate</option>
+                            <option value="ond">Ordinary National Diploma</option>
+                            <option value="hnd">Higher National Diploma</option>
+                            <option value="bsc">Bachelor's Degree</option>
+                            <option value="msc">Master's Degree</option>
+                            <option value="doc">Doctorate</option>
+                        </select> <br> <br>
+                        <label class="sub-label" for="prof">Professional(e.g. Law, Medical, Dental) please specify</label>
+                        <input type="text" name="prof" id="prof"> <br>
+
+                        <label class="sub-label" for="prof">Others (please specify)</label>
+                        <input type="text" name="others" id="others">
                     </div>
                     <div class="col-md-6">
                         <label for="marital">Marital Status</label> <br>
-                        <input type="text" name="marital" id="marital">
+                        <select name="gender" id="marital" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                        </select>
                     </div>
                     <div class="col-md-12">
                         <label for="how">How did you get to know about CBC?</label> <br>
-                        <textarea name="" id="textarea" ></textarea>
+                        <select name="gender" id="know-cbc" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="frnd">Friend/Colleague</option>
+                            <option value="cw-member">A Crosswalk Church Member</option>
+                            <option value="social">Social Media</option>
+                            <option value="fellwshp">My Fellowship/Church Leader</option>
+                            <option value="others">Others</option>
+                        </select>
                     </div>
-                </div>
-
-                <a href="../cbcb/" class="next-btn">NEXT</a>
+                </div> <br>
+                <a href="../cbcb/"  class="next-btn">
+                    NEXT
+                </a>
             </div>
         </form>
     </div>

@@ -66,8 +66,11 @@
             </div>
             <div class="form-body">
                 <label for="tongues">DO YOU SPEAK IN TOUNGUES?</label> <br>
-                <input type="text" name="tongues" id="tongues">
-
+                <select name="tongues" id="tongues" required>
+                    <option value="" disabled selected>select</option>
+                    <option value="yes-tong">Yes</option>
+                    <option value="no-tong">No</option>
+                </select> <br>
                 <label for="">
                     WHAT CAN YOU SAY ABOUT THE FOLLOWING BIBLICAL CONCEPTS?
                 </label>
@@ -79,7 +82,7 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text">
+                        <textarea name="" id="" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="salvation">
@@ -87,7 +90,7 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text">
+                       <textarea name="" id="" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="gots">
@@ -95,7 +98,7 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text">
+                       <textarea name="" id="" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="cojc">
@@ -103,7 +106,7 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text">
+                       <textarea name="" id="" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="discipleship">
@@ -111,28 +114,49 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text">
+                       <textarea name="" id="" cols="30" rows="6" required></textarea>
                     </div>
                 </div>
 
                 <label for="ministry">
-                    WHAT IS YOUR UNDERSTANDING/IDEA OF MINISTRY? DO YOU THINK MINISTRY
-                    IS FOR YOU? WHAT IS YOUR PLAN FOR MINISTRY?
+                    WHAT IS YOUR UNDERSTANDING/IDEA OF MINISTRY? 
                 </label> <br>
-                <input type="text" name="ministry" id="ministry">
+                <textarea name="ministry" id="ministry" cols="30" rows="3" required></textarea>
+                <label for="min4u">
+                    DO YOU THINK MINISTRY IS FOR YOU?
+                </label>
+
+                <select name="min-plan" id="min-plan" required>
+                    <option value="" disabled selected>select</option>
+                    <option value="yes-tong">Yes</option>
+                    <option value="no-tong">No</option>
+                    <option value="not-sure">Not sure</option>
+                </select> <br>
+
+                <label for="min-plan">
+                     WHAT IS YOUR PLAN FOR MINISTRY?
+                </label>
+                <select name="min-plan" id="min-plan" required>
+                    <option value="" disabled selected>select</option>
+                    <option value="yes-tong">Yes</option>
+                    <option value="no-tong">No</option>
+                    <option value="not-sure">Not sure</option>
+                </select> <br>
 
                 <label for="expectation">
                     WHAT ARE YOUR EXPECTATIONS FOR THIS BIBLE TRAINING COURSE?
                 </label> <br>
-                <input type="text" name="expectation" id="expectation">
+                <textarea name="expectation" id="expectation" cols="30" rows="3" required></textarea>
 
                 <label for="intend">
                     WHAT DO YOU INTEND TO DO WITH THE KNOWLEDGE AND EXPERIENCE GAINED FROM THIS COURSE?
                 </label> <br>
-                <input type="text" name="intend" id="intend">
+                <textarea name="intend" id="intend" cols="30" rows="3" required></textarea> <br> <br>
 
 
-                <a href="../cbcd/" class="next-btn">NEXT</a>
+                <a href="../cbcd/" class="next-btn">
+                    NEXT
+                </a>
             </div>
             <section>
 

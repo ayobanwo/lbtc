@@ -70,14 +70,14 @@
                 <label for="dmntion">
                     IN WHAT DENOMINATION/RELIGION WERE YOU RAISED?
                 </label> <br>
-                <input type="text" name="dmntion" id="dmntion">
+                <input type="text" name="dmntion" id="dmntion" required>
 
                 
 
                 <label for="slvexp">
                     BRIEFLY DESCRIBE YOUR SALVATION EXPERIENCE
                 </label> <br>
-                <input type="text" name="slvexp" id="slvexp">
+                <input type="text" name="slvexp" id="slvexp" required>
 
                 <label for="">
                     PASTOR/DISCIPLER/SPIRITUAL MENTOR
@@ -86,17 +86,17 @@
                 <label class="sub-label" for="mentor-name">
                     Name
                 </label> <br>
-                <input type="text" name="mentor-name" id="mentor-name">
+                <input type="text" name="mentor-name" id="mentor-name" required>
 
                 <label class="sub-label" for="mentor-church">
                     Church or Denomination
                 </label> <br>
-                <input type="text" name="mentor-church" id="mentor-church">
+                <input type="text" name="mentor-church" id="mentor-church" required>
 
                 <label class="sub-label" for="mentor-town">
                     Town/City of Residence
                 </label> <br>
-                <input type="text" name="mentor-town" id="mentor-town">
+                <input type="text" name="mentor-town" id="mentor-town" required>
 
                 <label for="local-church">
                     CURRENT LOCAL CHURCH COMMITMENT
@@ -105,23 +105,23 @@
                 <label class="sub-label" for="dnmtion-name">
                     Name of Denomination
                 </label> <br>
-                <input type="text" name="dnmtion-name" id="dnmtion-name">
+                <input type="text" name="dnmtion-name" id="dnmtion-name" required>
                 
                 <label class="sub-label" for="p-in-charge">
                     PASTOR or LEADER in charge
                 </label> <br>
-                <input type="text" name="p-in-charge" id="p-in-charge">
+                <input type="text" name="p-in-charge" id="p-in-charge" required>
                 
                 <label class="sub-label" for="church-loc">
                     Location
                 </label> <br>
-                <input type="text" name="church-loc" id="church-loc">
+                <input type="text" name="church-loc" id="church-loc" required>
 
                 <label class="sub-label" for="church-loc">
                     IN WHAT CAPACITY DO YOU SERVE?
                 </label> <br>
 
-                <select name="serve" id="serve">
+                <select name="serve" id="serve" required>
                     <option  selected disabled></option>
                     <option value="member">Member</option>
                     <option value="worker">Worker</option>
@@ -135,13 +135,13 @@
                 <label class="sub-label" for="church-loc">
                     Duration of Attendace/Commitment (Answer in years)
                 </label> <br>
-                <input type="text" name="church-loc" id="church-loc">
+                <input type="text" name="church-loc" id="church-loc" required>
 
                 <label class="sub-label" for="church-loc">
                     WHAT IS YOUR COMMITMENT PLAN?
                 </label> <br>
 
-                <input type="radio" name="commit" id="commit-primary"> 
+                <input type="radio" name="commit" id="commit-primary" required> 
                 <label class="sub-label" for="">
                     This is my primary commitment. I have no intention of leaving.
                 </label> <br>
@@ -326,13 +326,21 @@
                     HOW DID YOU GET TO KNOW ABOUT THIS BIBLE TRAINING COURSE?
                 </label>
 
-                <input type="text" name="know-about" id="know-about">
+                <select name="gender" id="know-cbc" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="frnd">Friend/Colleague</option>
+                    <option value="cw-member">A Crosswalk Church Member</option>
+                    <option value="social">Social Media</option>
+                    <option value="fellwshp">My Fellowship/Church Leader</option>
+                    <option value="others">Others</option>
+                </select>
 
-                <a href="../cbcc/" class="next-btn">NEXT</a>
+                <a href="../cbcc/" class="next-btn">
+                    NEXT
+                </a>
             </div>
-            <section>
-
-            </section>
+        </form>
+    </div>    
 </body>
 
 </html>

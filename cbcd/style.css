@@ -100,16 +100,6 @@ header p {
     margin-top: 50px;
 }
 
-.headerbtn {
-    background: #B8FFAD;
-    border-radius: 8px;
-    padding: 7px 20px;
-    outline: none;
-    font-weight: bold;
-    color: black;
-}
-
-
 .section{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 55%;
@@ -138,6 +128,9 @@ header p {
     font-family: Montserrat;
     background: #fdfdfd;
 }
+.form-body p{
+    text-align: justify;
+}
 .num{
     margin-right: 10px;
     line-height: 30px;
@@ -158,33 +151,43 @@ header p {
     color: white;
 }
 @media(max-width: 500px) {
+    .navhead {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+            url(../images/cbc-bg-mob.png);
+    }
+    .navbar {
+        padding: 10px 6%;
+    }
+
     #nav-logo {
         display: none;
     }
 
     #nav-logo-mob {
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .nav-link {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .cbc-text {
-        font-size: 50px;
-        line-height: 80px;
+        font-size: 60px;
+        line-height: 90px;
         letter-spacing: 3px;
+        text-align: left;
+        font-weight: 800;
     }
 
     header {
-        padding: 10px 50px 50px 50px;
+        padding: 40px 50px 90px 50px;
     }
 
     header p {
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .section {
@@ -195,7 +198,8 @@ header p {
     .form-body {
         padding: 50px;
     }
-    .form-head p{
-        font-size: 15px;
+
+    label {
+        font-size: 12px;
     }
 }
