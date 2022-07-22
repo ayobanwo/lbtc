@@ -722,7 +722,8 @@ footer{
         height: 55px;
     }
      .ordp-img, .sprt-img {
-            height: 170px;
+            height: 200px;
+            width: 295px;
     }
 }
 
