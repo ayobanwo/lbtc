@@ -13,7 +13,7 @@ body {
 }
 
 .logo img {
-    height: 100px;
+    height: 85px;
     width: 350px;
     object-fit: contain;
     color: white;
@@ -130,11 +130,12 @@ body {
 }
 
 .sign-in {
-    width: 150px;
+    padding: 5px 20px;
     height: 40px;
     border: none;
     font-size: 15px;
     background: linear-gradient(83.99deg, rgba(7, 47, 1, 0.82) -2.75%, rgba(70, 255, 43, 0.82) 109.25%);
     border-radius: 2px;
     color: white;
+    cursor: pointer;
 }

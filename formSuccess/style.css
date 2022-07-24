@@ -1,12 +1,14 @@
 .navhead {
-    background: linear-gradient(83.99deg, rgba(7, 47, 1, 0.82) -2.75%, rgba(70, 255, 43, 0.82) 109.25%),
-        url(../images/regpage-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+        url(../images/hnav-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 .navbar {
-    padding: 20px 9%;
+    padding: 30px 9%;
 }
 
 a:hover {
@@ -24,8 +26,7 @@ a:hover {
 .header-nav-link {
     color: #fff !important;
     display: flex;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 25px;
 }
 
 .navbar-collapse {
@@ -33,9 +34,8 @@ a:hover {
 }
 
 #nav-logo {
-    width: 50px;
-    height: 50px;
-    background: white;
+    width: 250px;
+    height: 90px;
 }
 
 nav li {
@@ -75,23 +75,40 @@ nav li {
     color: white;
 }
 
+#nav-logo-mob {
+    display: none;
+}
+
 header {
-    padding: 70px 10%;
+    padding: 50px 10% 200px 10%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-    justify-content: center;
-    background: white;
-    padding: 50px;
-    color: black; 
+
+.cbc-text {
+    font-size: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    line-height: 120px;
 }
-input{
-    margin-bottom: 10px ;
+
+header p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.section-a {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 55%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 600px;
+    bottom: 0;
+    margin: auto;
 }

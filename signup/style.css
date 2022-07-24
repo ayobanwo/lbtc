@@ -7,7 +7,6 @@ body {
     padding-bottom: 21px;
     margin: 0;
 }
-
 .logo img {
     height: 80px;
     width: 350px;
@@ -33,7 +32,6 @@ body {
     color: white;
     margin: 0;
 }
-
 .description {
     font-family: 'Poppins';
     font-style: normal;
@@ -43,12 +41,11 @@ body {
     font-style: italic;
     margin: 0;
 }
-
 form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 420px;
+    width: 600px;
     padding: 20px;
     background: #FFFFFF;
     border-radius: 4px;
@@ -114,29 +111,21 @@ form {
 }
 
 @media(max-width: 800px) {
-    nav {
-        display: flex;
-        justify-content: center;
-    }
-    .container{
-        padding: 50px 0 80px;
-    }
-    form {
+    form{
         width: 100%;
         padding: 10px 0 40px;
         position: absolute;
         left: 0;
-        margin-top: 80px;
     }
-
-    .description {
+    .description{
         margin-bottom: 20px;
     }
 }
-
 @media(max-width: 500px) {
-    
-
+    nav{
+        display: flex;
+        justify-content: center;
+    }
     .description {
         font-size: 12px;
     }
