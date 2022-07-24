@@ -171,10 +171,19 @@ section {
 .next-btn:hover {
     color: white;
 }
-@media(max-width: 500px) {
+@media(max-width: 1050px) {
+    .section {
+        top: 700px;
+        width: 70%;
+    }
+}
+
+@media(max-width: 700px) {
     .navhead {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
             url(../images/cbc-bg-mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .navbar {
         padding: 10px 6%;

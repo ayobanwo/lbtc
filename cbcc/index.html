@@ -59,17 +59,17 @@
 
     </div>
     <div class="section">
-        <form action="">
+        <form action="/cbcd/">
             <div class="form-head">
                 <h3>SECTION C</h3>
                 <p>Evaluation</p>
             </div>
             <div class="form-body">
-                <label for="tongues">DO YOU SPEAK IN TONGUES?</label> <br>
-                <select name="tongues" id="tongues" required>
+                <label for="speakTongue">DO YOU SPEAK IN TONGUES?</label> <br>
+                <select name="speakTongue" id="speakTongue" required>
                     <option value="" disabled selected>select</option>
-                    <option value="yes-tong">Yes</option>
-                    <option value="no-tong">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select> <br>
                 <label for="">
                     WHAT CAN YOU SAY ABOUT THE FOLLOWING BIBLICAL CONCEPTS?
@@ -77,12 +77,12 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="bibhrm">
+                        <label for="hermeneutics">
                             I. BIBLE HERMENEUTICS
                         </label>
                     </div>
                     <div class="col-md-6">
-                        <textarea maxlength="120" name="" id="" cols="30" rows="6" required></textarea>
+                        <textarea maxlength="180" name="" id="hermeneutics" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="salvation">
@@ -90,7 +90,7 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                       <textarea maxlength="120" name="" id="" cols="30" rows="6" required></textarea>
+                       <textarea maxlength="180" name="" id="salvation" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="gots">
@@ -98,15 +98,15 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                       <textarea maxlength="120" name="" id="" cols="30" rows="6" required></textarea>
+                       <textarea maxlength="180" name="" id="" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
-                        <label for="cojc">
+                        <label for="church">
                             IV. THE CHURCH OF JESUS CHRIST 
                         </label>
                     </div>
                     <div class="col-md-6">
-                       <textarea maxlength="120" name="" id="" cols="30" rows="6" required></textarea>
+                       <textarea maxlength="180" name="" id="church" cols="30" rows="6" required></textarea>
                     </div>
                     <div class="col-md-6">
                         <label for="discipleship">
@@ -114,53 +114,53 @@
                         </label>
                     </div>
                     <div class="col-md-6">
-                       <textarea maxlength="120" name="" id="" cols="30" rows="6" required></textarea>
+                       <textarea maxlength="180" name="" id="discipleship" cols="30" rows="6" required></textarea>
                     </div>
                 </div>
 
-                <label for="ministry">
+                <label for="understanding">
                     WHAT IS YOUR UNDERSTANDING/IDEA OF MINISTRY? 
                 </label> <br>
-                <textarea maxlength="120" name="ministry" id="ministry" cols="30" rows="3" required></textarea>
-                <label for="min4u">
+                <textarea maxlength="180" name="understanding" id="understanding" cols="30" rows="3" required></textarea>
+                <label for="thinkMinistry">
                     DO YOU THINK MINISTRY IS FOR YOU?
                 </label>
 
-                <select name="min-plan" id="min-plan" required>
+                <select name="thinkMinistry" id="thinkMinistry" required>
                     <option value="" disabled selected>select</option>
-                    <option value="yes-tong">Yes</option>
-                    <option value="no-tong">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                     <option value="not-sure">Not sure</option>
                 </select> <br>
 
-                <label for="min-plan">
+                <label for="planMinistry">
                     DO YOU HAVE A PLAN FOR MINISTRY?
                 </label>
-                <select name="min-plan" id="min-plan" required>
+                <select name="planMinistry" id="planMinistry" required>
                     <option value="" disabled selected>select</option>
-                    <option value="yes-tong">Yes</option>
-                    <option value="no-tong">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                     <option value="not-sure">Not sure</option>
                 </select> <br>
 
                 <label for="expectation">
                     WHAT ARE YOUR EXPECTATIONS FOR THIS BIBLE TRAINING COURSE?
                 </label> <br>
-                <textarea maxlength="120" name="expectation" id="expectation" cols="30" rows="3" required></textarea>
+                <textarea maxlength="180" name="expectation" id="expectation" cols="30" rows="3" required></textarea>
 
-                <label for="intend">
+                <label for="objectives">
                     WHAT DO YOU INTEND TO DO WITH THE KNOWLEDGE AND EXPERIENCE GAINED FROM THIS COURSE?
                 </label> <br>
-                <textarea maxlength="120" name="intend" id="intend" cols="30" rows="3" required></textarea> <br> <br>
+                <textarea maxlength="180" name="objectives" id="objectives" cols="30" rows="3" required></textarea> <br> <br>
 
 
-                <a href="../cbcd/" class="next-btn">
-                    NEXT
-                </a>
+                <button type="submit" class="next-btn">NEXT</button>
             </div>
             <section>
 
             </section>
 </body>
+
+<script src="script.js"></script>
 
 </html>

@@ -59,7 +59,7 @@
 
     </div>
     <div class="section">
-        <form action="">
+        <form action="/cbcc/">
             <div class="form-head">
                 <h3>SECTION B</h3>
                 <p>
@@ -141,7 +141,7 @@
                     WHAT IS YOUR COMMITMENT PLAN?
                 </label> <br>
 
-                <select name="commitmentPlan" id="commitmentPlan">
+                <select name="commitmentPlan" id="commitmentPlan" required>
                     <option  selected disabled></option>
                     <option value="pryCommit">
                         This is my primary commitment. I have no intention of leaving.
@@ -177,7 +177,7 @@
                 </label> <br>
                 
                 <select name="affiliationPurpose1" id="affiliationPurpose1">
-                    <option selected disabled></option>
+                    <option selected disabled>select</option>
                     <option value="music">Music Ministry</option>
                     <option value="drama">Drama Ministry</option>
                     <option value="fellowship">Fellowship</option>
@@ -206,8 +206,8 @@
                     COMMITMENT PLAN
                 </label> <br>
 
-                <select name="affliationCommitmentPlan1" id="affliationCommitmentPlan1">
-                    <option selected disabled></option>
+                <select name="affiliationCommitmentPlan1" id="affiliationCommitmentPlan1">
+                    <option selected disabled>select</option>
                     <option value="pryCommit1">
                         This is my primary commitment. I have no intention of leaving.
                     </option>
@@ -243,7 +243,7 @@
                 </label> <br>
                 
                 <select name="affiliationPurpose2" id="affiliationPurpose2">
-                    <option selected disabled></option>
+                    <option selected disabled>select</option>
                     <option value="music2">Music Ministry</option>
                     <option value="drama2">Drama Ministry</option>
                     <option value="fellowship2">Fellowship</option>
@@ -272,8 +272,8 @@
                     COMMITMENT PLAN
                 </label> <br>
                 
-                <select name="affliationCommitmentPlan2" id="affliationCommitmentPlan2">
-                    <option selected disabled></option>
+                <select name="affiliationCommitmentPlan2" id="affiliationCommitmentPlan2">
+                    <option selected disabled>select</option>
                     <option value="pryCommit2">
                         This is my primary commitment. I have no intention of leaving.
                     </option>
@@ -330,12 +330,8 @@
                     <option value="others">Others</option>
                 </select>
 
-                <button type="submit" class="next-btn">
-                    NEXT
-                </button>
-                <!-- <a href="../cbcc/" class="next-btn">
-                    NEXT
-                </a> -->
+
+                <button type="submit" class="next-btn">NEXT</button>
             </div>
         </form>
     </div>    
