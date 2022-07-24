@@ -130,6 +130,7 @@ body {
 }
 
 .sign-in {
+    /* width: 150px; */
     padding: 5px 20px;
     height: 40px;
     border: none;
